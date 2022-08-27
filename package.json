@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/aszeto5/Book-Search-Engine/issues"
   },
-  "homepage": "https://github.com/aszeto5/Book-Search-Engine#readme"
+  "homepage": "https://github.com/aszeto5/Book-Search-Engine#readme",
+  "dependencies": {
+    "@apollo/client": "^3.6.9",
+    "apollo-server-express": "^3.10.2",
+    "bcrypt": "^5.0.1",
+    "mongoose": "^6.5.3"
+  }
 }
