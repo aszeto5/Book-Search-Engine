@@ -4,7 +4,11 @@
   "description": "This week, you’ll take a fully functioning Google Books API search engine built with a RESTful API, and refactor it to be a GraphQL API built with Apollo Server. The app was built using the MERN stack, with a React front end, MongoDB database, and Node.js/Express.js server and API. It's already set up to allow users to save book searches to the back end.  To fulfill the Challenge, you’ll need to do the following:  Set up an Apollo Server to use GraphQL queries and mutations to fetch and modify data, replacing the existing RESTful API.  Modify the existing authentication middleware so that it works in the context of a GraphQL API.  Create an Apollo Provider so that requests can communicate with an Apollo Server.  Deploy the application to Heroku.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server/server.js",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
   },
   "repository": {
     "type": "git",
